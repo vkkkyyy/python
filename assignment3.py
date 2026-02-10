@@ -1,24 +1,22 @@
-# 1. Input: Gross Salary
-gross_salary = float(input("Enter gross salary: "))
-
-# 2. Determine monthly contributions using if-else
-if gross_salary <= 30000:
-    contribution_rate = 0.05  # 5%
-elif gross_salary <= 60000:
-    contribution_rate = 0.10  # 10%
+#Below is a program that calculates the monthly an employee should make to the national health insurance fund as per grossincom
+gross_salary = float(input("Enter your salary here"))
+if gross_salary > 0 and gross_salary <=5999:
+    print("Your monthly contribution is ksh 150.00")
+elif gross_salary >5999 and gross_salary <=7999:
+    print("Your monthly contribution is ksh 300.00")
+elif gross_salary >7999 and gross_salary <=11999:
+    print("Your monthly contribution is ksh 400.00")
+elif gross_salary> 11999 and gross_salary <= 14999:
+    print("Your monthly contribution is ksh 500.00")
+elif gross_salary > 14999 and gross_salary <=19999:
+    print("Yor monthly contribution is 600.00")
+elif gross_salary > 19999 and gross_salary <= 24999:
+    print("Your monthly contribution 750.00")
+elif gross_salary > 24999 and gross_salary <= 29999:
+    print("Your monthly contribution is 850.00")
+elif gross_salary > 29999 and gross_salary <= 49999 :
+    print("Your monthly contribution is 10000.00")
+elif gross_salary > 49999 and gross_salary <= 99999:
+    print("Your monthly contribution is 1500.00")
 else:
-    contribution_rate = 0.15  # 15%
-
-monthly_contribution = gross_salary * contribution_rate
-
-print(f"Monthly Contribution: {monthly_contribution:.2f}")
-
-# 3. Sum of contributions over a period (e.g., 12 months)
-total_contribution = 0
-months = 12
-
-for month in range(1, months + 1):
-    total_contribution += monthly_contribution
-    print(f"Month {month}: Contribution = {monthly_contribution:.2f}")
-
-print(f"Total Contribution after {months} months: {total_contribution:.2f}")
+    print ("Your monthly contribution is ksh 2000.00")
