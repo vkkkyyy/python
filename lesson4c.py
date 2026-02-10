@@ -15,6 +15,14 @@ print(counties)
 
 for county in counties:
     print(county)
+search = input("enter county to search")
+
+found = False
+for county in counties:
+    if county == search:
+        found = True 
+        break #stop checking once found
+
 
 
 print("________________")
