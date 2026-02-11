@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Below is a program that calculates the monthly an employee should make to the national health insurance fund as per grossincom
 gross_salary = float(input("Enter your salary here"))
 if gross_salary > 0 and gross_salary <=5999:
@@ -20,3 +21,6 @@ elif gross_salary > 49999 and gross_salary <= 99999:
     print("Your monthly contribution is 1500.00")
 else:
     print ("Your monthly contribution is ksh 2000.00")
+=======
+
+>>>>>>> 0e19b83a1dffc9e52dad5580a11e58305322752a
